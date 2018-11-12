@@ -1,7 +1,6 @@
 # Composition Exercise
 
 ## Requirements
----
 
 A Dog must poop and bark
 
@@ -16,7 +15,7 @@ A RobotDog must beepBoop bark and mantain its battery state.
 A CyborgDog must beepBoop, bark, poop, and mantain its battery state.
 - beepBoop cost 25% of battery, bark costs 50%
 - If the battery goes below zero the battery must be charged before the action is performed
-___
+
 ## Explanation
 
 These requirements are hard to fulfill with hierarchal inheritance. The problem here specifically lying with RobotDog and CyborgDog. Should the RobotDog and CyborgDog inherit from the Robot or the Dog. If we inherit from the Robot we need to reimplement the Dog class's poop and bark functions. If we inherit from the Robot class we need to reimplement the battery management and beepBoop functions.
