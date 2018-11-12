@@ -7,7 +7,7 @@ public class RobotDog implements BeepBoopable, Barkable {
   private BeepBoopable beepBoopService;
   private Barkable barkService;
 
-  RobotDog(Chargeable chargeService, BeepBoopable beepBoopService, BarkService barkService) {
+  RobotDog(Chargeable chargeService, BeepBoopable beepBoopService, Barkable barkService) {
     this.chargeService = chargeService;
     this.beepBoopService = beepBoopService;
     this.barkService = barkService;

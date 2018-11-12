@@ -8,7 +8,7 @@ public class CyborgDog implements Barkable, BeepBoopable, Poopable {
   private Barkable barkService;
   private Poopable poopService;
 
-  CyborgDog(Chargeable chargeService, BeepBoopable beepBoopService, BarkService barkService, Poopable poopService) {
+  CyborgDog(Chargeable chargeService, BeepBoopable beepBoopService, Barkable barkService, Poopable poopService) {
     this.chargeService = chargeService;
     this.beepBoopService = beepBoopService;
     this.barkService = barkService;
