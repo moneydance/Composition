@@ -18,7 +18,7 @@ A CyborgDog must beepBoop, bark, poop, and mantain its battery state.
 
 ## Explanation
 
-These requirements are hard to fulfill with hierarchal inheritance. The problem here specifically lying with RobotDog and CyborgDog. Should the RobotDog and CyborgDog inherit from the Robot or the Dog? If we inherit from the Robot we need to reimplement the Dog class's poop and bark functions. If we inherit from the Robot class we need to reimplement the battery management and beepBoop functions.
+These requirements are hard to fulfill with hierarchal inheritance. The problem here specifically lying with RobotDog and CyborgDog. Should the RobotDog and CyborgDog inherit from the Robot or the Dog? If we inherit from the Robot we need to reimplement the Dog class's poop and bark functions. If we inherit from the Dog class we need to reimplement the Robot class's battery management and beepBoop functions.
 
 What we really need to do is inherit from both. However, Multiple inheritance isn't a common feature in most languages. Instead we will use composition to achieve this.
 
