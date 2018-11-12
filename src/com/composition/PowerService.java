@@ -1,10 +1,10 @@
 package com.composition;
 
-public class ChargeService implements Chargeable {
+public class PowerService implements Powerable {
   private double batteryLife;
 
-  public ChargeService() {
-    this.batteryLife = 1;
+  public PowerService() {
+    this.charge();
   }
 
   public double getBatteryLife() {
@@ -21,7 +21,7 @@ public class ChargeService implements Chargeable {
     }
   }
 
-  public void charge() {
+  private void charge() {
     this.batteryLife = 1;
   }
 }

@@ -16,9 +16,9 @@ public class Main {
 
         // Services
         BeepBoopService robotBeepBoopService = new BeepBoopService();
-        ChargeService robotChargeService = new ChargeService();
+        PowerService robotPowerService = new PowerService();
         // Robot
-        Robot robot = new Robot(robotChargeService, robotBeepBoopService);
+        Robot robot = new Robot(robotPowerService, robotBeepBoopService);
         System.out.println("===Robot===");
         robot.beepBoop();
         robot.beepBoop();
@@ -26,10 +26,10 @@ public class Main {
 
         // Services
         BeepBoopService robotDogBeepBoopService = new BeepBoopService();
-        ChargeService robotDogChargeService = new ChargeService();
+        PowerService robotDogPowerService = new PowerService();
         BarkService robotDogBarkService = new BarkService("Bork");
         // RobotDog
-        RobotDog robotDog = new RobotDog(robotDogChargeService, robotBeepBoopService, robotDogBarkService);
+        RobotDog robotDog = new RobotDog(robotDogPowerService, robotBeepBoopService, robotDogBarkService);
         System.out.println("===Robot Dog===");
         robotDog.bark();
         robotDog.bark();
@@ -37,12 +37,12 @@ public class Main {
 
         // Services
         BeepBoopService cyborgDogBeepBoopService = new BeepBoopService();
-        ChargeService cyborgDogChargeService = new ChargeService();
+        PowerService cyborgDogPowerService = new PowerService();
         BarkService cyborgDogBarkService = new BarkService("Bork");
         PoopService cyborgDogPoopService = new PoopService();
         // RobotDog
         System.out.println("===Cyborg Dog===");
-        CyborgDog cyborgDog = new CyborgDog(cyborgDogChargeService, cyborgDogBeepBoopService, cyborgDogBarkService, cyborgDogPoopService);
+        CyborgDog cyborgDog = new CyborgDog(cyborgDogPowerService, cyborgDogBeepBoopService, cyborgDogBarkService, cyborgDogPoopService);
         cyborgDog.bark();
         cyborgDog.bark();
         cyborgDog.beepBoop();

@@ -24,4 +24,4 @@ What they really need to do is inherit from both. However, Multiple inheritance 
 
 Composition splits out behaviors into classes. In the example code these behavior classes are called services. These services implement an interface. Business domain classes (Dog, Robot, RobotDog, CyborgDog) inherit these interfaces and "inject" the services they needs via their constructors. By "composing" the services together our Business domain classes are able to fullfill their inherited interfaces and share functionallity without being locked into a heirarchal chain. Behaviors of our business domain classes can be modified by injecting different services.
 
-*ex. Our robots could inject an atomic battery service that removes the need for them to be charged because the battery life is so large.*
+*ex. The Robot, RobotDog, CyborgDog could inject an atomic power service that removes the need for them to be charged as long as the service fullfills the Powerable interface*

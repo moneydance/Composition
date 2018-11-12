@@ -1,7 +1,6 @@
 package com.composition;
 
-public interface Chargeable {
-  void charge();
+public interface Powerable {
   double getBatteryLife();
   void useBatteryLife(double batteryLifeNeeded);
 }
