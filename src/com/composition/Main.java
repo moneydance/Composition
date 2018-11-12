@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Services;
-        BarkService dogBarkService = new BarkService("Woof", 3);
-        PoopService dogPoopService = new PoopService(.5);
+        BarkService dogBarkService = new BarkService("Woof");
+        PoopService dogPoopService = new PoopService();
         // Dog
         Dog dog = new Dog(dogBarkService, dogPoopService);
         System.out.println("===Dog===");
@@ -15,7 +15,7 @@ public class Main {
         dog.poop();
 
         // Services
-        BeepBoopService robotBeepBoopService = new BeepBoopService(5);
+        BeepBoopService robotBeepBoopService = new BeepBoopService();
         ChargeService robotChargeService = new ChargeService();
         // Robot
         Robot robot = new Robot(robotChargeService, robotBeepBoopService);
@@ -25,9 +25,9 @@ public class Main {
         robot.beepBoop();
 
         // Services
-        BeepBoopService robotDogBeepBoopService = new BeepBoopService(5);
+        BeepBoopService robotDogBeepBoopService = new BeepBoopService();
         ChargeService robotDogChargeService = new ChargeService();
-        BarkService robotDogBarkService = new BarkService("Bark", 3);
+        BarkService robotDogBarkService = new BarkService("Bork");
         // RobotDog
         RobotDog robotDog = new RobotDog(robotDogChargeService, robotBeepBoopService, robotDogBarkService);
         System.out.println("===Robot Dog===");
@@ -36,10 +36,10 @@ public class Main {
         robotDog.beepBoop();
 
         // Services
-        BeepBoopService cyborgDogBeepBoopService = new BeepBoopService(5);
+        BeepBoopService cyborgDogBeepBoopService = new BeepBoopService();
         ChargeService cyborgDogChargeService = new ChargeService();
-        BarkService cyborgDogBarkService = new BarkService("Bark", 3);
-        PoopService cyborgDogPoopService = new PoopService(.5);
+        BarkService cyborgDogBarkService = new BarkService("Bork");
+        PoopService cyborgDogPoopService = new PoopService();
         // RobotDog
         System.out.println("===Cyborg Dog===");
         CyborgDog cyborgDog = new CyborgDog(cyborgDogChargeService, cyborgDogBeepBoopService, cyborgDogBarkService, cyborgDogPoopService);
